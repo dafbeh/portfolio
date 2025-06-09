@@ -1,10 +1,22 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react';
+import FloatingBar from './components/FloatingBar.jsx';
+import NavBar from './components/Navbar.jsx';
+import Home from './components/sections/Home.jsx';
+import Projects from './components/sections/Projects.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeSection, setActiveSection] = useState('home');
 
-  return <></>
+  return (
+    <>
+      <FloatingBar />
+      <NavBar activeSection={activeSection} setActiveSection={setActiveSection} />
+
+      {activeSection === 'home' && <Home />}
+      {activeSection === 'projects' && <Projects />}
+    </>
+  );
 }
 
-export default App
+export default App;
