@@ -2,9 +2,71 @@ export default function Projects() {
   return (
     <div className="flex justify-center items-center p-2">
       <div className="h-full w-[600px] flex flex-col">
-        <span className="font-bold text-[18px] mt-2">Lorem ipsum</span>
+        <span className="font-bold text-[18px] mt-2">Featured Projects</span>
         <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
-        <span className="text-[#9CAFA3] text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ultrices nibh. Nullam eget orci lectus. Aenean finibus tristique augue. Suspendisse tempor sagittis purus ut mollis. Phasellus dapibus placerat ex, eu mollis nulla dapibus et. Morbi bibendum quam at purus vestibulum condimentum. Sed fringilla aliquet ex in ultricies. Aliquam et justo in tellus mattis laoreet at vel ante. In at magna maximus, mattis est sed, mattis ipsum.</span>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 select-none">
+
+          <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+              transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+            <span className="mt-2 ml-1">SyncUp</span>
+            <span className="text-[#9CAFA3] text-[15px] ml-1">Real-time synchronized media playback with friends.</span>
+            <div className="flex flex-wrap mt-auto mb-3">
+              {["JavaScript", "Node.js", "Socket.io"].map((tech, index) => (
+                <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                    rounded-full py-1 px-3 text-[13px] mr-2">
+                  {tech}
+                  {index < 2 && ','}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+              transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+            <span className="mt-2 ml-1">Social Media Web App</span>
+            <span className="text-[#9CAFA3] text-[15px] ml-1">Design and Development of a Social Media Style Web Application.</span>
+            <div className="flex flex-wrap mt-auto mb-3">
+              {["Laravel", "PHP", "JavaScript"].map((tech, index) => (
+                <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                    rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
+                  {tech}
+                  {index < 2 && ','}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+              transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+            <span className="mt-2 ml-1">Chips-Challange</span>
+            <span className="text-[#9CAFA3] text-[15px] ml-1">Reimagining the 1989 Classic Chip’s Challenge: A Software Engineering Project at Swansea University.</span>
+            <div className="flex flex-wrap mt-auto mb-3">
+              {["Java"].map((tech, index) => (
+                <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                    rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+              transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+            <span className="mt-2 ml-1">Asteroids</span>
+            <span className="text-[#9CAFA3] text-[15px] ml-1">Asteroids Reimagined: A Unity-Based Introduction to Video Game Programming at Swansea University.</span>
+            <div className="flex flex-wrap mt-auto mb-3">
+              {["Unity", "C#"].map((tech, index) => (
+                <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                    rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
+                  {tech}
+                  {index < 1 && ','}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );
