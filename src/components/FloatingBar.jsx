@@ -1,5 +1,3 @@
-import '../index.css'
-
 export default function FloatingBar() {
   return (
     <div className="flex justify-center items-center p-1 md:pt-3">
@@ -13,7 +11,7 @@ export default function FloatingBar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-[18px]">Dafydd Behnan</span>
+            <span className="font-bold text-[18px] text-blue-300">Dafydd Behnan</span>
             <span className="text-[#9CAFA3] text-[15px]">Full Stack Engineer</span>
           </div>
         </div>

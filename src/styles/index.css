@@ -22,3 +22,25 @@ html, body {
   color: #ffffff;
   background-color: #09090B;
 }
+
+html {
+    overflow-y: scroll;
+}
+
+/* Tailwind CSS */
+.carousel-track {
+  animation: scroll-left 15s linear infinite;
+}
+
+.animation-pause {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

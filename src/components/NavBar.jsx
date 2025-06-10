@@ -1,5 +1,3 @@
-import '../index.css';
-
 export default function Navbar({ activeSection, setActiveSection }) {
   return (
     <nav className="flex justify-center items-center p-1 md:p-2">

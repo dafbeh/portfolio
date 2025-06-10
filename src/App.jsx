@@ -1,5 +1,5 @@
-import './App.css'
 import { useState } from 'react';
+import './styles/index.css'
 import FloatingBar from './components/FloatingBar.jsx';
 import NavBar from './components/Navbar.jsx';
 import Home from './components/sections/Home.jsx';
