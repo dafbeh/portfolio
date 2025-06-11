@@ -25,6 +25,7 @@ html, body {
 
 html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /* Tailwind CSS */
