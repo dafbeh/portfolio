@@ -1,4 +1,5 @@
 import SyncUp from '../projects/SyncUp.jsx';
+import SocialMedia from '../projects/SocialMedia.jsx';
 
 export default function Projects() {
   return (
@@ -25,9 +26,9 @@ export default function Projects() {
               </div>
             </a>
 
-            <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+            <a href="#SocialSite" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
-              <span className="mt-2 ml-1">Social Media Web App</span>
+              <span className="mt-2 ml-1">Social Site</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Design and Development of a Social Media Style Web Application.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Laravel", "PHP", "JavaScript"].map((tech, index) => (
@@ -38,7 +39,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
 
             <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
@@ -73,6 +74,7 @@ export default function Projects() {
         </div>
       </div>
       <SyncUp />
+      <SocialMedia />
     </div>
   );
 }
