@@ -4,9 +4,9 @@ const name = 'SyncUp';
 const sourceCode = 'https://github.com/dafbeh/SyncUp';
 const techList = ['Node.js', 'Socket.io', 'JavaScript'];
 const slides = [
-  'Sync/Sync-1.png',
-  'Sync/Sync-2.png',
-  'Sync/Sync-3.png'
+  'Projects/Sync/Sync-1.png',
+  'Projects/Sync/Sync-2.png',
+  'Projects/Sync/Sync-3.png'
 ];
 const text = `SyncUp is a real-time web app that lets 
   multiple users watch YouTube videos together in sync. 

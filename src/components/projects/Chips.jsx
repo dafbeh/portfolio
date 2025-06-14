@@ -1,23 +1,23 @@
 import Album from '../Album.jsx';
 
-const name = 'Social Site';
-const sourceCode = 'https://github.com/dafbeh/Laravel-Social-Media';
-const techList = ['Laravel', 'PHP', 'JavaScript'];
+const name = 'Chips Challange';
+const sourceCode = 'https://github.com/dafbeh/Chips-Challenge';
+const techList = 'Java';
 const slides = [
-  'Projects/Social/Social-1.png',
-  'Projects/Social/Social-2.png',
-  'Projects/Social/Social-3.png'
+  'Projects/Sync/Sync-1.png',
+  'Projects/Sync/Sync-2.png',
+  'Projects/Sync/Sync-3.png'
 ];
-const text = `Design and Development of a Social Media Style Web Application 
-        Using Laravel.  Developed as part of Swansea University's Web 
-        Application Development module, it allows users to create profiles, 
-        post updates, and interact with others in a dynamic timeline. 
-        Features include user authentication, responsive UI design, 
-        real-time comment threads, and post engagement tools.`;
+const text = `A retro puzzle game built by a team of 8 in Java. 
+        I focused on front-end and system design, creating the 
+        main menu, scalable level/profile buttons, and screens 
+        like the scoreboard and pause menu. I also implemented 
+        the player profile system, including dynamic profile 
+        creation and level progression tracking.`;
 
-export default function Project2() {
+export default function Project1() {
   return (
-    <section id="SocialSite" className="flex justify-center items-center p-2 pb-3">
+    <section id="chips" className="flex justify-center items-center p-2 pb-3">
       <div className="h-full w-[600px] flex flex-col">
         <div className="mt-2 flex items-center justify-between">
           <div className='flex items-center gap-2'>
@@ -33,13 +33,10 @@ export default function Project2() {
             </a>
           </div>
           <div>
-            {techList.map((tech, index) => (
-              <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
-                  rounded-full py-1 px-3 text-[13px] mr-1">
-                {tech}
-                {index < 2 && ','}
-              </span>
-            ))}
+            <span className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                rounded-full py-1 px-3 text-[13px] mr-1">
+              {techList}
+            </span>
           </div>
         </div>
         <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>

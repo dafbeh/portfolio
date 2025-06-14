@@ -1,5 +1,6 @@
 import SyncUp from '../projects/SyncUp.jsx';
 import SocialMedia from '../projects/SocialMedia.jsx';
+import Chips from '../projects/Chips.jsx';
 
 export default function Projects() {
   return (
@@ -41,7 +42,7 @@ export default function Projects() {
               </div>
             </a>
 
-            <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+            <a href="#chips" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
               <span className="mt-2 ml-1">Chips-Challange</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Reimagining the 1989 Classic Chip’s Challenge: A Software Engineering Project at Swansea University.</span>
@@ -53,7 +54,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
 
             <div className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
@@ -75,6 +76,7 @@ export default function Projects() {
       </div>
       <SyncUp />
       <SocialMedia />
+      <Chips />
     </div>
   );
 }
