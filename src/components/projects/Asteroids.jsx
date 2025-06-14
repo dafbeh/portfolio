@@ -1,23 +1,22 @@
 import Album from '../Album.jsx';
 
-const name = 'Chips Challange';
-const sourceCode = 'https://github.com/dafbeh/Chips-Challenge';
-const techList = 'Java';
+const name = 'Asteroids';
+const sourceCode = 'https://github.com/dafbeh/Asteroids';
+const techList = ['C#', 'Unity'];
 const slides = [
-  'Projects/Chips/Chips-3.png',
-  'Projects/Chips/Chips-1.png',
-  'Projects/Chips/Chips-2.png'
+  'Projects/Asteroids/Asteroids-1.png',
+  'Projects/Asteroids/Asteroids-2.png',
+  'Projects/Asteroids/Asteroids-3.png'
 ];
-const text = `A retro puzzle game built by a team of 8 in Java. 
-        I focused on front-end and system design, creating the 
-        main menu, scalable level/profile buttons, and screens 
-        like the scoreboard and pause menu. I also implemented 
-        the player profile system, including dynamic profile 
-        creation and level progression tracking.`;
+const text = `A modern remake of the classic game, 
+        built in Unity with C#. Implemented core systems 
+        like player movement, shooting, asteroid behavior, 
+        collisions, and score tracking. Added power-ups 
+        to enhance gameplay and built a clean, responsive UI.`;
 
 export default function Project1() {
   return (
-    <section id="chips" className="flex justify-center items-center p-2 pb-3">
+    <section id={name} className="flex justify-center items-center p-2 pb-3">
       <div className="h-full w-[600px] flex flex-col">
         <div className="mt-2 flex items-center justify-between">
           <div className='flex items-center gap-2'>
@@ -33,10 +32,13 @@ export default function Project1() {
             </a>
           </div>
           <div>
-            <span className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
-                rounded-full py-1 px-3 text-[13px] mr-1">
-              {techList}
-            </span>
+            {techList.map((tech, index) => (
+              <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                  rounded-full py-1 px-3 text-[13px] mr-1">
+                {tech}
+                {index < 1 && ','}
+              </span>
+            ))}
           </div>
         </div>
         <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
