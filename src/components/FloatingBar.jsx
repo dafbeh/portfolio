@@ -11,8 +11,8 @@ export default function FloatingBar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-[18px] text-blue-300">Dafydd Behnan</span>
-            <span className="text-[#9CAFA3] text-[15px]">Full Stack Engineer</span>
+            <span className="font-bold text-[18px]">Dafydd Behnan</span>
+            <span className="text-[#9CAFA3] text-[15px]">Software Engineer</span>
           </div>
         </div>
         <div className="flex items-center">

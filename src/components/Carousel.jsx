@@ -21,7 +21,7 @@ export default function TechCarousel() {
           [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
         <div className="carousel-track flex">
           {[...technologies, ...technologies].map((tech, index) => (
-            <div className="mx-8 whitespace-nowrap shrink-0 text-2xl py-6" key={index}>
+            <div className="mx-8 whitespace-nowrap shrink-0 text-2xl" key={index}>
               {tech}
             </div>
           ))}
