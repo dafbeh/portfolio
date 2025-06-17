@@ -19,7 +19,7 @@ export default function Home() {
             <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
             <span className="text-[#9CAFA3] text-[15px]">• BSc Computer Science, ____ at Swansea University</span>
 
-            <span className="mx-auto mt-8 mb-2">My technologies...</span>
+            <span className="mx-auto mt-8 mb-2">My technologies</span>
           </div>
       </div>  
       <Carousel />
