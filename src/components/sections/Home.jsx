@@ -17,9 +17,13 @@ export default function Home() {
 
             <span className="font-bold text-[18px] mt-5">Education</span>
             <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
-            <span className="text-[#9CAFA3] text-[15px]">• BSc Computer Science, ____ at Swansea University</span>
+            <span className="text-[#9CAFA3] text-[15px]">• <b>BSc Computer Science – First Class Honours, Swansea University</b></span>
+            <span className="text-[#9CAFA3] text-[15px]">• Achieved a First on dissertation and final-year project</span>
+            <span className="text-[#9CAFA3] text-[15px]">• Scored <b>92%</b> in Web Application Development</span>
+            <span className="text-[#9CAFA3] text-[15px]">• Scored <b>96%</b> in Game Development</span>
 
-            <span className="mx-auto mt-8 mb-2">My technologies</span>
+
+            <span className="mx-auto mt-8">My technologies</span>
           </div>
       </div>  
       <Carousel />
