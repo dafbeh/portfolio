@@ -19,7 +19,7 @@ const Album = ({ slides }) => {
     }
 
     return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative mt-3">
         <div className="flex transition ease-out duration-200"
             style={{ transform: `translateX(-${current * 100}%)` }}>
                 {slides.map((s, index) => (

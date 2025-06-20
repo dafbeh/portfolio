@@ -18,8 +18,8 @@ const text = `A modern remake of the classic game,
 export default function Project1() {
   return (
     <section id={name} className="flex justify-center items-center p-2 pb-3">
-      <RevealOnScroll>
       <div className="h-full w-[600px] flex flex-col">
+        <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">
           <div className='flex items-center gap-2'>
             <span className="font-bold text-[18px]">{name}</span>
@@ -46,8 +46,8 @@ export default function Project1() {
         <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
         <span className="text-[#9CAFA3] text-[15px] pb-3">{text}</span>
         <Album slides={slides}/>
+        </RevealOnScroll>
       </div>
-      </RevealOnScroll>
     </section>
   );
 }
