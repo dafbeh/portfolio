@@ -74,7 +74,7 @@ const technologies = [
   { name: "CSS", logo: CSSSVG },
   { name: "TailwindCSS", logo: tailwindSVG },
   { name: "Java", logo: javaSVG },
-  { name: "C Sharp", logo: cSharpSVG },
+  { name: "C-Sharp", logo: cSharpSVG },
 ];
 
 export default function TechCarousel() {

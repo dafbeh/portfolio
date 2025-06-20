@@ -1,4 +1,5 @@
 import Album from '../Album.jsx';
+import { RevealOnScroll } from '../RevealOnScroll.jsx';
 
 const name = 'Asteroids';
 const sourceCode = 'https://github.com/dafbeh/Asteroids';
@@ -17,6 +18,7 @@ const text = `A modern remake of the classic game,
 export default function Project1() {
   return (
     <section id={name} className="flex justify-center items-center p-2 pb-3">
+      <RevealOnScroll>
       <div className="h-full w-[600px] flex flex-col">
         <div className="mt-2 flex items-center justify-between">
           <div className='flex items-center gap-2'>
@@ -45,6 +47,7 @@ export default function Project1() {
         <span className="text-[#9CAFA3] text-[15px] pb-3">{text}</span>
         <Album slides={slides}/>
       </div>
+      </RevealOnScroll>
     </section>
   );
 }

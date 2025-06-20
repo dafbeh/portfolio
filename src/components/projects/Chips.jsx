@@ -1,4 +1,5 @@
 import Album from '../Album.jsx';
+import { RevealOnScroll } from '../RevealOnScroll.jsx';
 
 const name = 'Chips Challange';
 const sourceCode = 'https://github.com/dafbeh/Chips-Challenge';
@@ -18,6 +19,7 @@ const text = `A retro puzzle game built by a team of 8 in Java.
 export default function Project1() {
   return (
     <section id="chips" className="flex justify-center items-center p-2 pb-3">
+      <RevealOnScroll>
       <div className="h-full w-[600px] flex flex-col">
         <div className="mt-2 flex items-center justify-between">
           <div className='flex items-center gap-2'>
@@ -43,6 +45,7 @@ export default function Project1() {
         <span className="text-[#9CAFA3] text-[15px] pb-3">{text}</span>
         <Album slides={slides}/>
       </div>
+      </RevealOnScroll>
     </section>
   );
 }

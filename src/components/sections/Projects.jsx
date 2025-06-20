@@ -27,7 +27,7 @@ export default function Projects() {
                 ))}
               </div>
             </a>
-
+              
             <a href="#SocialSite" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
               <span className="mt-2 ml-1">Social Site</span>
@@ -42,7 +42,7 @@ export default function Projects() {
                 ))}
               </div>
             </a>
-
+              
             <a href="#chips" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
               <span className="mt-2 ml-1">Chips-Challange</span>
@@ -56,7 +56,7 @@ export default function Projects() {
                 ))}
               </div>
             </a>
-
+              
             <a href="#Asteroids" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
               <span className="mt-2 ml-1">Asteroids</span>
@@ -71,7 +71,6 @@ export default function Projects() {
                 ))}
               </div>
             </a>
-
           </div>
         </div>
       </div>
