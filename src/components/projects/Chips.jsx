@@ -18,7 +18,7 @@ const text = `A retro puzzle game built by a team of 8 in Java.
 
 export default function Project1() {
   return (
-    <section id="chips" className="flex justify-center items-center p-2 pb-3">
+    <section id="chips" className="flex justify-center items-center p-2 pb-5">
       <div className="h-full w-[600px] flex flex-col">
         <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">

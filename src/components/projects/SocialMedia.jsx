@@ -18,7 +18,7 @@ const text = `Design and Development of a Social Media Style Web Application
 
 export default function Project2() {
   return (
-    <section id="SocialSite" className="flex justify-center items-center p-2 pb-3">
+    <section id="SocialSite" className="flex justify-center items-center p-2 pb-5">
       <div className="h-full w-[600px] flex flex-col">
         <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">

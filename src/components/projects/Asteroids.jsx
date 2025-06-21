@@ -17,7 +17,7 @@ const text = `A modern remake of the classic game,
 
 export default function Project1() {
   return (
-    <section id={name} className="flex justify-center items-center p-2 pb-3">
+    <section id={name} className="flex justify-center items-center p-2 pb-5">
       <div className="h-full w-[600px] flex flex-col">
         <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">
