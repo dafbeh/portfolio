@@ -1,13 +1,18 @@
+import React, { useState } from "react";
+import Email from "./Email.jsx";
+
 export default function FloatingBar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   return (
     <div className="flex justify-center items-center p-1 md:pt-3">
       <div className="border rounded-lg h-[120px] w-[600px] flex items-center justify-between">
         <div className="flex items-center select-none">
           <div className="flex items-center justify-center p-3 pointer-events-none">
             <img
-              src="https://i.pinimg.com/originals/83/bc/8b/83bc8b88cf6bc4b4e04d153a418cde62.jpg"
+              src="headshot.png"
               alt="Profile"
-              className="rounded-full w-[60px] h-[60px]"
+              className="rounded-full w-[60px] h-[60px] object-cover"
             />
           </div>
           <div className="flex flex-col">
@@ -30,13 +35,14 @@ export default function FloatingBar() {
               </svg>
             </a>
             {/*  Email icon */}
-            <a href="mailto:dafbehnan@gmail.com" rel="noopener noreferrer">
+            <button onClick={() => setIsModalOpen(true)} className="cursor-pointer">
               <svg className='mr-3 hover:stroke-white' 
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#9CAFA3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
                   <rect width="20" height="16" x="2" y="4" rx="2"/>
               </svg>
-            </a>
+            </button>
+            <Email isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
         </div>
       </div>
