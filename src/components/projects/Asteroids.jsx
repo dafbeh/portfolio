@@ -17,7 +17,7 @@ const text = `A modern remake of the classic game,
 
 export default function Project1() {
   return (
-    <section id={name} className="flex justify-center items-center p-2 pb-5">
+    <section id={name} className="flex justify-center items-center p-2">
       <div className="h-full w-[600px] flex flex-col">
         <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">
@@ -38,12 +38,11 @@ export default function Project1() {
               <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
                   rounded-full py-1 px-3 text-[13px] mr-1">
                 {tech}
-                {index < 1 && ','}
               </span>
             ))}
           </div>
         </div>
-        <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
+        <hr className="h-px mt-2 mb-2 bg-[#1b1b1d] border-0"></hr>
         <span className="text-[#9CAFA3] text-[15px] pb-3">{text}</span>
         <Album slides={slides}/>
         </RevealOnScroll>

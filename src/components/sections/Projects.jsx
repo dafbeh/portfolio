@@ -22,7 +22,6 @@ export default function Projects() {
                   <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2">
                     {tech}
-                    {index < 2 && ','}
                   </span>
                 ))}
               </div>
@@ -37,7 +36,6 @@ export default function Projects() {
                   <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
                     {tech}
-                    {index < 2 && ','}
                   </span>
                 ))}
               </div>
@@ -66,7 +64,6 @@ export default function Projects() {
                   <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
                     {tech}
-                    {index < 1 && ','}
                   </span>
                 ))}
               </div>
@@ -74,10 +71,12 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <SyncUp />
-      <SocialMedia />
-      <Chips />
-      <Asteroids />
+      <div className='flex flex-col pt-6 pb-12 gap-6'> 
+        <SyncUp />
+        <SocialMedia />
+        <Chips />
+        <Asteroids />
+      </div>
     </div>
   );
 }
