@@ -21,6 +21,9 @@ html, body {
   font-weight: 400;
   color: #ffffff;
   background-color: #09090B;
+
+  scrollbar-color: #ffffff #09090B;
+  scrollbar-width: thin;
 }
 
 html {
