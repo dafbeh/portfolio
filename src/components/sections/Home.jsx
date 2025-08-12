@@ -25,13 +25,14 @@ export default function Home() {
             <span className="font-bold text-[18px] mt-5">In progress:</span>
             <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
             <a href="https://github.com/dafbeh/Marketplace">
-              <span className="text-[#9CAFA3] text-[15px] text-underline">• <u>A full-stack marketplace platform with Laravel</u></span>
+              <span className="text-[#9CAFA3] text-[15px] text-underline">• <u>A full-stack NFT marketplace platform with Laravel</u></span>
             </a>
 
-            <span className="mx-auto mt-8">My technologies</span>
+            <span className="mx-auto mt-8 pb-1">My technologies</span>
           </div>
       </div>  
       <Carousel />
+      <div className="pb-12"></div>
     </div>
   );
 }
