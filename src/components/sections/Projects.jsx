@@ -2,6 +2,7 @@ import SyncUp from '../projects/SyncUp.jsx';
 import SocialMedia from '../projects/SocialMedia.jsx';
 import Chips from '../projects/Chips.jsx';
 import Asteroids from '../projects/Asteroids.jsx';
+import ColourWind from '../projects/ColourWind.jsx';
 
 export default function Projects() {
   return (
@@ -68,6 +69,21 @@ export default function Projects() {
                 ))}
               </div>
             </a>
+
+            <a href="#Colour Wind" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+              <span className="mt-2 ml-1">Colour Wind</span>
+              <span className="text-[#9CAFA3] text-[15px] ml-1">Generates complete Tailwind compatible colour themes.</span>
+              <div className="flex flex-wrap mt-auto mb-3">
+                {["Next.js", "React", "Tailwind"].map((tech, index) => (
+                  <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                      rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -76,6 +92,7 @@ export default function Projects() {
         <SocialMedia />
         <Chips />
         <Asteroids />
+        <ColourWind />
       </div>
     </div>
   );
