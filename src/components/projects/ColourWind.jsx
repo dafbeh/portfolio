@@ -24,7 +24,7 @@ export default function Project1() {
           <div className='flex items-center gap-0'>
             <span className="font-bold text-[18px]">{name}</span>
             <a href={sourceCode} target='_blank'>
-              <ArrowUpRight color="#4673f8" strokeWidth={1.5} />
+              <ArrowUpRight color="#2b7fff" strokeWidth={1.5} />
             </a>
           </div>
           <div>

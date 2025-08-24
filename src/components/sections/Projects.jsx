@@ -15,12 +15,12 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 select-none">
 
             <a href="#SyncUp" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
-                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">SyncUp</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Real-time synchronized media playback with friends.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["JavaScript", "Node.js", "Socket.io"].map((tech, index) => (
-                  <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                  <span key={index} className="bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2">
                     {tech}
                   </span>
@@ -29,12 +29,12 @@ export default function Projects() {
             </a>
               
             <a href="#SocialSite" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
-                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">Social Site</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Design and Development of a Social Media Style Web Application.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Laravel", "PHP", "JavaScript"].map((tech, index) => (
-                  <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                  <span key={index} className="bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
                     {tech}
                   </span>
@@ -43,12 +43,12 @@ export default function Projects() {
             </a>
               
             <a href="#chips" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
-                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">Chips-Challange</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Reimagining the 1989 Classic Chip’s Challenge: A Software Engineering Project at Swansea University.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Java"].map((tech, index) => (
-                  <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                  <span key={index} className="bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
                     {tech}
                   </span>
@@ -57,9 +57,9 @@ export default function Projects() {
             </a>
               
             <a href="#Asteroids" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
-                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">Asteroids</span>
-              <span className="text-[#9CAFA3] text-[15px] ml-1">Asteroids Reimagined: A Unity-Based Introduction to Video Game Programming at Swansea University.</span>
+              <span className="text-[15px] ml-1">Asteroids Reimagined: A Unity-Based Introduction to Video Game Programming at Swansea University.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Unity", "C#"].map((tech, index) => (
                   <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
@@ -71,12 +71,12 @@ export default function Projects() {
             </a>
 
             <a href="#Colour Wind" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
-                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer"> 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">Colour Wind</span>
               <span className="text-[#9CAFA3] text-[15px] ml-1">Generates complete Tailwind compatible colour themes.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Next.js", "React", "Tailwind"].map((tech, index) => (
-                  <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
+                  <span key={index} className="bg-blue-500/10 text-blue-500 
                       rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
                     {tech}
                   </span>
