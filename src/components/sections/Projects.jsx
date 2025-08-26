@@ -3,6 +3,7 @@ import SocialMedia from '../projects/SocialMedia.jsx';
 import Chips from '../projects/Chips.jsx';
 import Asteroids from '../projects/Asteroids.jsx';
 import ColourWind from '../projects/ColourWind.jsx';
+import Svgify from '../projects/Svgify.jsx';
 
 export default function Projects() {
   return (
@@ -59,7 +60,7 @@ export default function Projects() {
             <a href="#Asteroids" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
                 transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
               <span className="mt-2 ml-1">Asteroids</span>
-              <span className="text-[15px] ml-1">Asteroids Reimagined: A Unity-Based Introduction to Video Game Programming at Swansea University.</span>
+              <span className="text-[#9CAFA3] text-[15px] ml-1">Asteroids Reimagined: A Unity-Based Introduction to Video Game Programming at Swansea University.</span>
               <div className="flex flex-wrap mt-auto mb-3">
                 {["Unity", "C#"].map((tech, index) => (
                   <span key={index} className="text-[#9CAFA3] bg-blue-500/10 text-blue-500 
@@ -84,6 +85,20 @@ export default function Projects() {
               </div>
             </a>
 
+            <a href="#Svgify" className="w-full h-[150px] flex flex-col rounded-lg border-2 pl-2 pr-1 
+                transition duration-200 ease-in-out hover:opacity-80 cursor-pointer hover:border-blue-500"> 
+              <span className="mt-2 ml-1">Svgify</span>
+              <span className="text-[#9CAFA3] text-[15px] ml-1">A tool for that lets you upload an SVG, customize its colors, and instantly export it as a component.</span>
+              <div className="flex flex-wrap mt-auto mb-3">
+                {["Next.js", "React", "Tailwind"].map((tech, index) => (
+                  <span key={index} className="bg-blue-500/10 text-blue-500 
+                      rounded-full py-1 px-3 text-[13px] mr-2 ml-1">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -93,6 +108,7 @@ export default function Projects() {
         <Chips />
         <Asteroids />
         <ColourWind />
+        <Svgify />
       </div>
     </div>
   );
