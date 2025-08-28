@@ -3,7 +3,8 @@ import { RevealOnScroll } from '../RevealOnScroll.jsx';
 import { ArrowUpRight } from 'lucide-react';
 
 const name = 'Colour Wind';
-const sourceCode = 'https://colour-wind.vercel.app/';
+const deployUrl = 'https://colour-wind.vercel.app/';
+const sourceCode = 'https://github.com/dafbeh/colour-wind';
 const techList = ["Next.js", "React", "Tailwind"];
 const slides = [
   'Projects/ColourWind/ColourWind-1.png',
@@ -21,10 +22,19 @@ export default function Project1() {
       <div className="h-full w-[600px] flex flex-col">
         <RevealOnScroll>
         <div className="mt-2 flex items-center justify-between">
-          <div className='flex items-center gap-0'>
+          <div className='flex items-center gap-2'>
             <span className="font-bold text-[18px]">{name}</span>
             <a href={sourceCode} target='_blank'>
-              <ArrowUpRight color="#2b7fff" strokeWidth={1.5} />
+              <svg className='hover:stroke-white cursor-pointer'
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                fill="none" stroke="#9cafa3" stroke-linecap="round" 
+                viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+            </a>
+            <a href={deployUrl} target='_blank'>
+              <ArrowUpRight className="-ml-1" color="#2b7fff" strokeWidth={1.5} />
             </a>
           </div>
           <div>
