@@ -2,8 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-export const RevealOnScroll = ({ children }: any) => {
-    const ref = useRef(null);
+interface RevealOnScrollProps {
+  children: React.ReactNode;
+}
+
+export const RevealOnScroll = ({ children }: RevealOnScrollProps) => {
+    const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
