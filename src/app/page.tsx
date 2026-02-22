@@ -11,9 +11,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <main>
-        <FloatingBar />
+      <main className="flex flex-col">
         <NavBar activeSection={activeSection} setActiveSection={setActiveSection} />
+        <FloatingBar />
 
         {activeSection === 'home' && <Home />}
         {activeSection === 'projects' && <Projects />}

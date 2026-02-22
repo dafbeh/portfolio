@@ -2,22 +2,23 @@
 
 export default function Navbar({ activeSection, setActiveSection }: any) {
   return (
-    <nav className="flex justify-center items-center p-1 md:p-2">
-      <div className="border rounded-lg h-[50px] w-[600px] flex items-center justify-center select-none">
-        <div className="flex items-center justify-center gap-x-10 sm:gap-x-26">
+    <nav className="flex justify-center items-center py-5">
+      <div className="border border-white/20 rounded-lg h-[45px] w-[350px] 
+        flex items-center justify-between select-none">
+        <div className={`flex items-center justify-center w-1/2 w-full h-full rounded-l-lg ${activeSection === 'home' ? 'bg-white' : ''}`}>
           <button
             onClick={() => setActiveSection('home')}
-            className={`text-l font-bold cursor-pointer ${
-              activeSection === 'home' ? 'text-white' : 'text-[#9CAFA3]'
-            } hover:text-white`}
+            className={`text-l font-bold cursor-pointer w-full h-full ${activeSection === 'home' ? 'text-[#09090b]' : ''
+              }`}
           >
             Home
           </button>
+        </div>
+        <div className={`flex items-center justify-center w-1/2 w-full h-full rounded-r-lg ${activeSection === 'projects' ? 'bg-white' : ''}`}>
           <button
             onClick={() => setActiveSection('projects')}
-            className={`text-l font-bold cursor-pointer ${
-              activeSection === 'projects' ? 'text-white' : 'text-[#9CAFA3]'
-            } hover:text-white`}
+            className={`text-l font-bold cursor-pointer w-full h-full ${activeSection === 'projects' ? 'text-[#09090b]' : ''
+              }`}
           >
             Projects
           </button>
