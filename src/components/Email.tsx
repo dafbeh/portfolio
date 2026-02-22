@@ -1,6 +1,13 @@
-import React, { useState } from "react";
+"use client"
 
-export default function Email({ isOpen, onClose }) {
+import { useState } from "react";
+
+interface EmailProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function Email({ isOpen, onClose }: EmailProps) {
   const email = "dafbehnan@gmail.com";
   const [copied, setCopied] = useState(false);
 

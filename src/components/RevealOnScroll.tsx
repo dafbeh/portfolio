@@ -1,12 +1,18 @@
+"use client"
+
 import { useEffect, useRef } from "react";
 
-export const RevealOnScroll = ({ children }) => {
-    const ref = useRef(null);
+interface RevealOnScrollProps {
+  children: React.ReactNode;
+}
+
+export const RevealOnScroll = ({ children }: RevealOnScrollProps) => {
+    const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting && ref.current) {
                     ref.current.classList.add("visible");
                 }
             },
