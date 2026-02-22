@@ -8,13 +8,14 @@ export default function FloatingBar() {
 
   return (
     <div className="flex justify-center items-center md:m-0 m-2">
-      <div className="p-5 border border-white/20 rounded-xl h-[120px] w-[700px] flex items-center justify-between">
-        <div className="flex items-center select-none">
+      <div className="p-5 border border-white/20 rounded-xl h-[120px] w-[700px] 
+          flex items-center justify-between">
+        <div className="flex items-center">
           <div className="flex pr-3 items-center justify-center pointer-events-none">
             <img
               src="headshot.png"
               alt="Profile"
-              className="rounded-md w-[60px] h-[60px] object-cover"
+              className="rounded-md w-[60px] h-[60px] object-cover select-none"
             />
           </div>
           <div className="flex flex-col">
