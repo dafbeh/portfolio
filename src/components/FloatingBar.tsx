@@ -1,5 +1,7 @@
+"use client"
+
 import React, { useState } from "react";
-import Email from "./Email.jsx";
+import Email from "./Email";
 
 export default function FloatingBar() {
   const [isModalOpen, setIsModalOpen] = useState(false);

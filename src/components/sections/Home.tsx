@@ -1,4 +1,6 @@
-import Carousel from '../Carousel.jsx';
+"use client"
+
+import Carousel from '../Carousel';
 
 export default function Home() {
   return (

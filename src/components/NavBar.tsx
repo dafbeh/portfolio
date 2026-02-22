@@ -1,4 +1,6 @@
-export default function Navbar({ activeSection, setActiveSection }) {
+"use client"
+
+export default function Navbar({ activeSection, setActiveSection }: any) {
   return (
     <nav className="flex justify-center items-center p-1 md:p-2">
       <div className="border rounded-lg h-[50px] w-[600px] flex items-center justify-center select-none">

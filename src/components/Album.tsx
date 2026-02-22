@@ -1,6 +1,8 @@
+"use client"
+
 import { useState } from 'react';
 
-const Album = ({ slides }) => {
+const Album = ({ slides }: any) => {
     const [current, setCurrent] = useState(0);
 
     let previousSlide = () => {

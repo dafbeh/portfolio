@@ -1,9 +1,11 @@
-import SyncUp from '../projects/SyncUp.jsx';
-import SocialMedia from '../projects/SocialMedia.jsx';
-import Chips from '../projects/Chips.jsx';
-import Asteroids from '../projects/Asteroids.jsx';
-import ColourWind from '../projects/ColourWind.jsx';
-import Svgify from '../projects/Svgify.jsx';
+"use client"
+
+import SyncUp from '../projects/SyncUp';
+import SocialMedia from '../projects/SocialMedia';
+import Chips from '../projects/Chips';
+import Asteroids from '../projects/Asteroids';
+import ColourWind from '../projects/ColourWind';
+import Svgify from '../projects/Svgify';
 
 export default function Projects() {
   return (

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+"use client"
 
-export default function Email({ isOpen, onClose }) {
+import { useState } from "react";
+
+export default function Email({ isOpen, onClose }: any) {
   const email = "dafbehnan@gmail.com";
   const [copied, setCopied] = useState(false);
 

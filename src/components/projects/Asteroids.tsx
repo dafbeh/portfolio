@@ -1,20 +1,21 @@
-import Album from '../Album.jsx';
-import { RevealOnScroll } from '../RevealOnScroll.jsx';
-import { ArrowUpRight } from 'lucide-react';
+"use client"
 
-const name = 'Colour Wind';
-const deployUrl = 'https://colour-wind.vercel.app/';
-const sourceCode = 'https://github.com/dafbeh/colour-wind';
-const techList = ["Next.js", "React", "Tailwind"];
+import Album from '../Album';
+import { RevealOnScroll } from '../RevealOnScroll';
+
+const name = 'Asteroids';
+const sourceCode = 'https://github.com/dafbeh/Asteroids';
+const techList = ['C#', 'Unity'];
 const slides = [
-  'Projects/ColourWind/ColourWind-1.png',
-  'Projects/ColourWind/ColourWind-2.png'
+  'Projects/Asteroids/Asteroids-1.png',
+  'Projects/Asteroids/Asteroids-2.png',
+  'Projects/Asteroids/Asteroids-3.png'
 ];
-const text = `Colour Wind is an interactive web tool that allows developers 
-    and designers to generate complete Tailwind CSS color palettes from a 
-    single base color. Users can pick a color, name their palette, and 
-    instantly see shades from 50 to 950. The tool also generates ready-to-use 
-    Tailwind @theme code blocks for quick integration into projects.`;
+const text = `A modern remake of the classic game, 
+        built in Unity with C#. Implemented core systems 
+        like player movement, shooting, asteroid behavior, 
+        collisions, and score tracking. Added power-ups 
+        to enhance gameplay and built a clean, responsive UI.`;
 
 export default function Project1() {
   return (
@@ -32,9 +33,6 @@ export default function Project1() {
                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
               </svg>
-            </a>
-            <a href={deployUrl} target='_blank'>
-              <ArrowUpRight className="-ml-1" color="#2b7fff" strokeWidth={1.5} />
             </a>
           </div>
           <div>

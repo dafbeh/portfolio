@@ -1,5 +1,7 @@
-import Album from '../Album.jsx';
-import { RevealOnScroll } from '../RevealOnScroll.jsx';
+"use client"
+
+import Album from '../Album';
+import { RevealOnScroll } from '../RevealOnScroll';
 
 const name = 'SyncUp';
 const sourceCode = 'https://github.com/dafbeh/SyncUp';
