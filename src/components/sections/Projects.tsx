@@ -6,6 +6,7 @@ import Chips from '../projects/Chips';
 import Asteroids from '../projects/Asteroids';
 import ColourWind from '../projects/ColourWind';
 import Svgify from '../projects/Svgify';
+import { RevealOnScroll } from '../RevealOnScroll';
 
 export default function Projects() {
   const projects = [
@@ -48,7 +49,7 @@ export default function Projects() {
   ];
 
   return (
-    <div>
+    <RevealOnScroll>
       <div className="flex justify-center items-center p-2 md:pt-8 pt-2">
         <div className="h-full w-[700px] flex flex-col">
           <span className="font-bold text-[18px]">Featured Projects</span>
@@ -82,6 +83,6 @@ export default function Projects() {
         <ColourWind />
         <Svgify />
       </div>
-    </div>
+    </RevealOnScroll>
   );
 }
