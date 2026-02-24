@@ -2,7 +2,7 @@
 
 export default function Navbar({ activeSection, setActiveSection }: any) {
   return (
-    <nav className="flex justify-center items-center py-5">
+    <nav className="flex justify-center items-center py-5 md:px-0 px-5">
       <div className="border border-white/20 rounded-lg h-[45px] w-[350px] 
         flex items-center justify-between select-none">
         <div className={`flex items-center justify-center w-1/2 w-full h-full rounded-l-lg ${activeSection === 'home' ? 'bg-white' : ''}`}>

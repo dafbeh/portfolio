@@ -5,7 +5,7 @@ import Carousel from '../Carousel';
 export default function Home() {
   return (
     <div>
-      <div className="flex justify-center items-center p-2 md:pt-8 pt-2">
+      <div className="flex justify-center items-center md:p-2 p-4 md:pt-8 pt-2">
 
           <div className="h-full w-[700px] flex flex-col">
             <span className="font-bold text-[18px]">About me</span>

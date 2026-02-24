@@ -8,7 +8,7 @@ export default function FloatingBar() {
 
   return (
     <div className="flex justify-center items-center md:m-0 m-2">
-      <div className="p-5 border border-white/20 rounded-xl h-[120px] w-[700px] 
+      <div className="md:p-5 p-3 border border-white/20 rounded-xl h-[120px] w-[700px] 
           flex items-center justify-between">
         <div className="flex items-center">
           <div className="flex pr-3 items-center justify-center pointer-events-none">
