@@ -49,7 +49,7 @@ export default function Projects() {
   ];
 
   return (
-    <RevealOnScroll>
+    <div>
       <div className="flex justify-center items-center p-2 md:pt-8 pt-2">
         <div className="h-full w-[700px] flex flex-col">
           <span className="font-bold text-[18px]">Featured Projects</span>
@@ -83,6 +83,6 @@ export default function Projects() {
         <ColourWind />
         <Svgify />
       </div>
-    </RevealOnScroll>
+    </div>
   );
 }

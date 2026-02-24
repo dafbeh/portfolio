@@ -1,11 +1,10 @@
 "use client"
 
 import Carousel from '../Carousel';
-import { RevealOnScroll } from '../RevealOnScroll';
 
 export default function Home() {
   return (
-    <RevealOnScroll>
+    <div>
       <div className="flex justify-center items-center md:p-2 p-4 md:pt-8 pt-2">
 
           <div className="h-full w-[700px] flex flex-col">
@@ -36,6 +35,6 @@ export default function Home() {
       </div>  
       <Carousel />
       <div className="pb-12"></div>
-    </RevealOnScroll>
+    </div>
   );
 }
