@@ -7,7 +7,7 @@ import {
 
 export default function FAQ() {
   return (
-    <div className="w-full max-w-xl">
+    <div className="w-full md:max-w-3xl max-w-5/6">
       <Accordion type="single" collapsible defaultValue="item-1">
         <AccordionItem value="item-1">
           <AccordionTrigger>Do I need a long-term contract?</AccordionTrigger>

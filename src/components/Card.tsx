@@ -28,7 +28,7 @@ export default function PriceCard({ title, price, description, features, popular
       <CardContent>
         <div>
           <span className="text-4xl font-bold font-inter">
-            ${price}
+            £{price}
           </span>
           <span className="text-md text-gray-300/70 font-inter"> /per month</span>
         </div>
