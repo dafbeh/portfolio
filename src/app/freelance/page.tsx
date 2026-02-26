@@ -1,16 +1,9 @@
 "use client";
 
-import { Inter } from 'next/font/google'
 import { Button } from '@/components/ui/button';
 import Link from 'next/link'
 import PriceCard from '@/components/Card';
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '900',
-})
-
+import FAQ from '@/components/FAQ';
 
 export default function HomePage() {
   return (
@@ -23,7 +16,7 @@ export default function HomePage() {
               bg-primary/10 px-4 py-1 rounded-full border-1 border-primary/20 select-none">
               AVAILABLE FOR NEW PROJECTS
             </div>
-            <h1 className={`${inter.className} text-center text-6xl sm:text-6xl lg:text-7xl`}>
+            <h1 className={`text-center text-6xl sm:text-6xl lg:text-7xl font-bold`}>
               Freelance Services
             </h1>
           </div>
@@ -90,6 +83,42 @@ export default function HomePage() {
           />
         </div>
       </section>
+
+      {/* FAQ */}
+      <section>
+        <div className="flex flex-col gap-5 justify-center items-center md:py-35 py-10">
+          <h1 className={`text-center text-6xl sm:text-6xl lg:text-3xl font-semibold`}>
+            Common Questions
+          </h1>
+          <FAQ />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <section>
+        <div className="flex flex-col gap-5 justify-center items-center pb-30">
+          <h1 className="text-center text-6xl sm:text-6xl lg:text-4xl font-semibold">
+            Ready to start your next project?
+          </h1>
+          <p className="text-center sm:w-[500px] w-9/10 text-gray-300/70 text-md">
+            Let's collaborate to build something exceptional. I'm currently accepting new projects for 2026.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-5">
+            <Button className="font-semibold p-6 text-[15px] cursor-pointer">
+              Start your project
+            </Button>
+            <Button asChild variant="ghost"
+              className="font-semibold p-6 text-[15px] cursor-pointer 
+              border-white/20 hover:bg-white/5 w-full sm:w-auto"
+            >
+              <Link href="/">
+                View My Work
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
