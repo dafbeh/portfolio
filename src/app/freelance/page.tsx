@@ -89,7 +89,7 @@ export default function HomePage() {
       <section>
         <div className="flex flex-col gap-10 justify-center items-center md:py-35 py-10">
           <h1 className={`text-center text-4xl sm:text-6xl lg:text-5xl font-semibold`}>
-            Common Questions.
+            Common Questions
           </h1>
           <FAQ />
         </div>
