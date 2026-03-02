@@ -31,15 +31,15 @@ export default function PriceCard({ title, price, description, features, popular
   );
 
   return (
-    <div className="relative">
+    <div className="relative px-2">
       {popular && (
         <motion.div
-          className="absolute rounded-lg inset-3 blur-md z-0 pointer-events-none -my-2"
+          className="absolute rounded-lg inset-3 blur-lg z-0 pointer-events-none -my-2"
           style={{ background: rotatingBg }}
         />
       )}
 
-      <Card className={`md:w-[350px] w-9/10 h-[500px] mx-2 before:bg-secondary/30 border-1 border-muted/50 relative
+      <Card className={`lg:w-[350px] w-full h-[500px] before:bg-secondary/30 border-1 border-muted/50 relative
         ${popular ? "border-primary/80 border-3" : ""}`}>
         <CardHeader>
           {popular && (
@@ -58,7 +58,7 @@ export default function PriceCard({ title, price, description, features, popular
             <span className="text-4xl font-bold font-inter">
               £{price}
             </span>
-            <span className="text-md text-gray-300/70 font-inter"> /per month</span>
+            <span className="text-lg text-gray-300/70 font-inter"> /per month</span>
           </div>
 
           <div className="mt-4">

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link'
 import PriceCard from '@/components/Card';
 import FAQ from '@/components/FAQ';
+import Process from '@/components/Process';
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
         lg:bg-[radial-gradient(at_50%_12%,_#151519,_transparent_50%)]">
       {/* Hero */}
       <section>
-        <div className="flex flex-col gap-5 justify-center items-center md:py-35 py-10">
+        <div className="flex flex-col gap-5 justify-center items-center lg:py-35 py-10">
           <div className="flex flex-col gap-5 justify-center items-center">
             <div className="text-primary text-sm font-bold font-sans tracking-widest
               bg-primary/10 px-4 py-1 rounded-full border-1 border-primary/20 select-none">
@@ -26,8 +27,8 @@ export default function HomePage() {
             I specialize in building production-ready applications with a focus on architecture,
             speed, and security.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 md:pt-4 
-              w-full sm:w-auto md:p-2 px-20">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 lg:pt-4 
+              w-full sm:w-auto lg:p-2 px-20">
             <Button className="font-semibold p-6 text-[15px] cursor-pointer">
               Schedule a Consultation
             </Button>
@@ -45,7 +46,7 @@ export default function HomePage() {
 
       {/* Pricing */}
       <section>
-        <div className="flex flex-col md:flex-row md:gap-3 gap-5 justify-center items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-3 gap-5 justify-center items-center">
           <PriceCard
             title={"Growth"}
             price={39.99}
@@ -85,9 +86,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* What to expect */}
+      <section>
+        <div className="flex flex-col gap-5 justify-center items-center lg:py-35 py-10">
+          <h1 className="text-center text-4xl px-5 sm:text-6xl lg:text-5xl font-semibold">
+            What to Expect
+          </h1>
+          <p className="text-center sm:w-[620px] w-9/10 text-gray-300/70 text-lg">
+            A clear, structured process so you always know what comes next. No guesswork, no surprises.
+          </p>
+          <Process />
+        </div>
+      </section>
+
       {/* FAQ */}
       <section>
-        <div className="flex flex-col gap-10 justify-center items-center md:py-35 py-10">
+        <div className="flex flex-col gap-10 justify-center items-center lg:pb-35 pb-10">
           <h1 className={`text-center text-4xl sm:text-6xl lg:text-5xl font-semibold`}>
             Common Questions
           </h1>
@@ -97,11 +111,11 @@ export default function HomePage() {
 
       {/* Footer */}
       <section>
-        <div className="flex flex-col gap-5 justify-center items-center pb-30">
+        <div className="flex flex-col gap-5 justify-center items-center pb-35">
           <h1 className="text-center text-4xl px-5 sm:text-6xl lg:text-5xl font-semibold">
             Ready to start your next project?
           </h1>
-          <p className="text-center sm:w-[500px] w-9/10 text-gray-300/70 text-md">
+          <p className="text-center sm:w-[500px] w-9/10 text-gray-300/70 text-lg">
             Let's collaborate to build something exceptional. I'm currently accepting new projects for 2026.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-5">
