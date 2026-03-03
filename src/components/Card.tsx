@@ -39,7 +39,8 @@ export default function PriceCard({ title, price, description, features, popular
         />
       )}
 
-      <Card className={`lg:w-[350px] w-full h-[500px] before:bg-secondary/30 border-1 border-muted/50 relative
+      <Card className={`lg:w-[340px] xl:w-[360px] sm:w-[450px] w-full h-[500px] before:bg-secondary/30 border-1 
+        border-muted/50 relative
         ${popular ? "border-primary/80 border-3" : ""}`}>
         <CardHeader>
           {popular && (

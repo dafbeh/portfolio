@@ -46,7 +46,7 @@ export default function HomePage() {
 
       {/* Pricing */}
       <section>
-        <div className="flex flex-col lg:flex-row lg:gap-3 gap-5 justify-center items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-0 xl:gap-3 sm:gap-5 gap-5 justify-center items-center">
           <PriceCard
             title={"Growth"}
             price={39.99}
