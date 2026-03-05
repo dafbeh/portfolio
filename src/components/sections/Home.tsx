@@ -26,8 +26,8 @@ export default function Home() {
 
             <span className="font-bold text-[18px] mt-10">In progress:</span>
             <hr className="h-px mt-2 mb-4 bg-[#1b1b1d] border-0"></hr>
-            <a href="https://github.com/dafbeh/TradeNote" target="_blank" rel="noopener noreferrer">
-              <span className="text-[#9CAFA3] text-[15px] text-underline">• <u>A full-stack application to log day trading performance</u></span>
+            <a href="https://github.com/dafbeh/camad" target="_blank" rel="noopener noreferrer">
+              <span className="text-[#9CAFA3] text-[15px] text-underline">• <u>Official website for CAMAD (Community Action Machynlleth and District)</u></span>
             </a>
 
             <span className="mx-auto mt-10 pb-1">My technologies</span>
